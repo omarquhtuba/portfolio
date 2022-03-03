@@ -1,0 +1,100 @@
+.a{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.a-left{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+}
+.a-right{
+    flex: 1
+}
+.a-card.bg{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background-color: aqua;
+    
+}
+.a-card{
+    width: 60%;
+    height: 70vh;
+    border-radius: 30px;
+    position: absolute;
+    overflow: hidden;
+}
+.a-img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.a-award-img{
+    width: 120px;
+    height: 120px;
+    border-radius: 150px;
+    object-fit: cover;
+    margin-top: 10px;
+}
+.a-title{
+    font-weight: 400;
+}
+.a-sub{
+    margin: 20px 0px;
+    font-size:20px;
+}
+.a-desc{
+    font-weight: 400;
+    font-size:20px;
+}
+.a-award{
+     margin-top: 20px;
+     font-size:20px;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+.a-award-text{
+    width: 70%;
+}
+.a-award-title{
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size:25px;
+}
+
+@media screen and (max-width: 480px) {
+    .a{
+        flex-direction: column-reverse;
+        text-align: center;
+        margin-top: 50px;
+    }
+    .a-left{
+        width: 100%;
+    }
+    .a-card{
+        height: 30vh;
+        margin-bottom: 50px;
+    }
+    .a-card.bg{
+        position: absolute;
+        top: 0px;
+        left: 40px;
+        background-color: rgb(8, 209, 209);   
+    }
+    .a-award{
+        display: none;
+    }
+    .a-right{
+        padding: 20px;
+    }
+    .a-sub{
+        color:teal;
+        font-weight:600;
+        font-size:25px;
+    }
+}
